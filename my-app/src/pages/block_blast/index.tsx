@@ -25,7 +25,8 @@ export default function Home() {
                         <div className={styles.heart}></div>
                         <p>500</p>
                     </div>
-                    <div className={styles.block_box}>
+                    <div className={styles.block_box_wrap}>
+                        <div className={styles.block_box}></div>
 
                     </div>
                     <div className={styles.block_list}>
