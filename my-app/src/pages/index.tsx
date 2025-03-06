@@ -8,8 +8,9 @@ export default function Home() {
   return (
     <>
       <div className={styles.header}>
-        <Link href={"/myPage/"}><h1>hello world</h1></Link>
+        <Link href={"/block_blast/"}><h1>hello world</h1></Link>
       </div>
+
     </>
   );
 }
