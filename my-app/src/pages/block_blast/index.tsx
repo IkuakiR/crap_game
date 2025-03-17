@@ -26,9 +26,7 @@ export default function Home() {
                         <p>500</p>
                     </div>
                     <div className={styles.block_box_wrap}>
-                        <div className={styles.block_box}>
-                            <div className={styles.box}></div>
-                        </div>
+                        <div className={styles.block_box}></div>
                         <div className={styles.block_list}>
                             <div className={`${styles.block} ${styles.left}`}></div>
                             <div className={`${styles.block} ${styles.center}`}></div>
