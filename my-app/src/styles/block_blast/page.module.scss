@@ -15,8 +15,6 @@
 
 .main_container {
     width: 100%;
-    // background: blue;
-    // z-index: 0;
 
     .header {
         display: flex;
@@ -35,7 +33,6 @@
             width: 1rem;
             height: 1rem;
             transform: translateX(25%) rotate(-135deg);
-            // z-index: 10;
         }
 
         .return_btn::before,
@@ -74,47 +71,6 @@
             text-shadow: 1px 1px 2px black;
             text-align: center;
         }
-
-        // .heart {
-        //     width: 100px;
-        //     /* 正方形を作る */
-        //     height: 100px;
-        //     /* 正方形を作る */
-        //     position: relative;
-        //     /* 基準位置とする */
-        // }
-
-        // .heart::before,
-        // .heart::after {
-        //     content: "";
-        //     /* 疑似要素に必須 */
-        //     width: 50%;
-        //     /* ハートの丸い部分の大きさにかかわる */
-        //     height: 80%;
-        //     /* ハートの高さにかかわる */
-        //     background: #E0548E;
-        //     /* ハートの色 */
-        //     border-radius: 25px 25px 0 0;
-        //     /* ハートの半円を生成 */
-        //     display: block;
-        //     /* ブロック要素にする */
-        //     position: absolute;
-        //     /* 相対位置に指定 */
-        // }
-
-        // .heart::before {
-        //     transform: rotate(-45deg);
-        //     /* 左に回転 */
-        //     left: 14%;
-        //     /* 左からの位置を指定 */
-        // }
-
-        // .heart::after {
-        //     transform: rotate(45deg);
-        //     /* 右に回転 */
-        //     right: 14%;
-        //     /* 右からの位置を指定 */
-        // }
     }
 
     .block_box_wrap {
@@ -123,10 +79,24 @@
         background-color: #242C53;
         margin: 0 auto;
 
-        .block_box {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        .box {
+            width: 480px;
+            height: 480px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+            border: 1px solid #191e3a;
+            // border: 1px solid tomato;
+            background-image:
+                repeating-linear-gradient(90deg,
+                    #000,
+                    #000, 1px,
+                    transparent 1px,
+                    transparent 60px),
+                repeating-linear-gradient(0deg,
+                    #000,
+                    #000 1px,
+                    #242C53 1px,
+                    #242C53 60px);
+
         }
     }
 }
